@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Uma exposição fotográfica particular sobre duas pessoas, quinze memórias e uma história." />
+  <meta name="theme-color" id="themeColorMeta" content="#f4f1ea" />
+  <title>Nossa Exposição — Memórias em 15 Fotografias</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-progress" aria-hidden="true"><span id="pageProgressBar"></span></div>
+
+  <header class="site-header">
+    <a href="#inicio" class="brand" aria-label="Voltar ao início">
+      <span class="brand-mark">A+R</span>
+      <span class="brand-copy">
+        <strong>Fragmentos de nós dois</strong>
+        <small>Entrelinhas Tão nossas</small>
+      </span>
+    </a>
+
+    <nav class="top-nav" aria-label="Navegação principal">
+      <a href="#historia">Nossa história</a>
+      <a href="#obras">Fotografias</a>
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        type="button"
+        aria-label="Ativar modo escuro"
+        aria-pressed="false"
+        title="Alternar tema"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-text">Escuro</span>
+      </button>
+      <button class="text-button" id="startPresentationTop" type="button">
+        Iniciar apresentação
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-kicker intro-reveal" style="--intro-delay: 80ms">EXPOSIÇÃO · 15 FOTOGRAFIAS</div>
+
+      <div class="hero-grid">
+        <div class="hero-title-wrap intro-reveal" style="--intro-delay: 160ms">
+          <p class="eyebrow">Eu e Você, muito tempo pra viver</p>
+          <h1>Pequenas manchas de tinta como a gente<br />guardados em fotografias.</h1>
+        </div>
+
+        <aside class="hero-meta intro-reveal" style="--intro-delay: 260ms" aria-label="Informações da exposição">
+          <div>
+            <span>Curadoria</span>
+            <strong>Rodrigo &amp; Agatha</strong>
+          </div>
+          <div>
+            <span>Período</span>
+            <strong>2025 - 2026</strong>
+          </div>
+          <div>
+            <span>Formato</span>
+            <strong>Fotografias</strong>
+          </div>
+          <div>
+            <span>Acervo</span>
+            <strong>15 memórias</strong>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-photo-frame intro-reveal parallax-frame" style="--intro-delay: 360ms">
+        <span class="photo-glow" aria-hidden="true"></span>
+        <img
+          src="assets/images/foto-14.jpeg"
+          alt="Fotografia de abertura da exposição"
+          class="hero-photo"
+        />
+        <div class="hero-photo-caption">
+          <span>01</span>
+          <p>
+            O começo da exposição. 
+          </p>
+        </div>
+      </div>
+
+      <a class="scroll-cue intro-reveal" style="--intro-delay: 460ms" href="#historia" aria-label="Ir para nossa história">
+        <span>Explorar exposição</span>
+        <span aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <section class="story-section" id="historia">
+      <div class="section-number reveal" data-reveal="left">I</div>
+
+      <div class="story-copy reveal" data-reveal="up">
+        <p class="eyebrow">Sobre esta exposição</p>
+        <h2>Não é uma linha do tempo perfeita. São só pequenos recortes do meu mundo depois que você chegou.</h2>
+
+        <div class="story-columns">
+          <p>
+            Esta página foi pensada como um espaço pra gente revisitar nossos momentos.
+            Cada fotografia funciona como uma obra: tem um título, uma data,
+            um lugar e uma memória associada a ela.
+          </p>
+          <p>
+           Eu queria uma forma diferente de evidenciar essas vezes onde estivemos juntos.
+          Cada fotografia é uma época diferente que a gente viveu
+          É engraçado ver o tanto que a gente já se viu e viveu juntos nesses quase 2anos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="collection-section" id="obras">
+      <div class="collection-heading reveal" data-reveal="up">
+        <div>
+          <p class="eyebrow">Acervo selecionado</p>
+          <h2>Quinze fotografias</h2>
+        </div>
+
+        <button class="museum-button" id="startPresentation" type="button">
+          <span>Iniciar apresentação</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+
+      <div class="gallery" id="gallery" aria-label="Galeria com quinze fotografias"></div>
+    </section>
+
+    <section class="closing-section reveal" data-reveal="scale">
+      <p class="eyebrow">Fim da exposição</p>
+      <blockquote>
+        “Eu quero fazer do mundo um lugar mais calmo pra ti, tudo é tão complicado. Às vezes o seu sorriso é o suficiente pra mudar meu dia completamente. Obrigado por tudo.”
+      </blockquote>
+      <p class="closing-note">
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Nossa Exposição</strong>
+      <span>Feita para o meu amor.</span>
+    </div>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+
+  <!-- Visualizador / apresentação -->
+  <dialog class="viewer" id="viewer">
+    <div class="viewer-shell">
+      <header class="viewer-header">
+        <div class="viewer-brand">
+          <span>Nossa Exposição</span>
+          <span class="viewer-counter" id="viewerCounter">01 / 15</span>
+        </div>
+
+        <div class="viewer-actions">
+          <button
+            class="viewer-icon-button"
+            id="autoplayButton"
+            type="button"
+            aria-pressed="false"
+            title="Reprodução automática"
+          >
+            ▶
+            <span class="sr-only">Ativar apresentação automática</span>
+          </button>
+
+          <button
+            class="viewer-icon-button"
+            id="closeViewer"
+            type="button"
+            aria-label="Fechar apresentação"
+          >
+            ×
+          </button>
+        </div>
+      </header>
+
+      <div class="viewer-progress" aria-hidden="true">
+        <div class="viewer-progress-bar" id="viewerProgress"></div>
+      </div>
+
+      <div class="viewer-stage" id="viewerStage">
+        <button
+          class="viewer-arrow viewer-arrow-left"
+          id="prevPhoto"
+          type="button"
+          aria-label="Fotografia anterior"
+        >
+          ←
+        </button>
+
+        <figure class="viewer-figure">
+          <div class="viewer-image-wrap">
+            <img id="viewerImage" src="" alt="" />
+          </div>
+
+          <figcaption class="viewer-caption">
+            <div class="viewer-caption-heading">
+              <span class="viewer-index" id="viewerIndex">01</span>
+              <div>
+                <h3 id="viewerTitle">Título</h3>
+                <p class="viewer-details" id="viewerDetails"></p>
+              </div>
+            </div>
+
+            <p class="viewer-description" id="viewerDescription"></p>
+          </figcaption>
+        </figure>
+
+        <button
+          class="viewer-arrow viewer-arrow-right"
+          id="nextPhoto"
+          type="button"
+          aria-label="Próxima fotografia"
+        >
+          →
+        </button>
+      </div>
+
+      <footer class="viewer-footer">
+        <span>Use ← → para navegar</span>
+        <span>ESC para sair</span>
+      </footer>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

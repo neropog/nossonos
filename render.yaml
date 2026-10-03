@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: nossa-exposicao
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
