@@ -9,14 +9,14 @@ const photos = [
   },
   {
     src: "assets/images/foto-02.jpeg",
-    title: "Um dia comum",
+    title: "Conturbação",
     place: "Casinha da Agatha",
     description:
       "Eu não sei por qual razão, mas gosto dessa foto. Tinha sido um dia estressante e ver você se divertindo me enchendo de coisa na cara com varias risadas em volta, deixou tudo mais tranquilo pra mim."
   },
   {
     src: "assets/images/foto-03.jpeg",
-    title: "Riso fora de hora",
+    title: "Nosso tempo",
     place: "Casa do Nero",
     description:
       "Uma foto das poucas vezes em que você veio aqui em casa, saiba que sinto tua falta por aqui, volte."
@@ -30,14 +30,14 @@ const photos = [
   },
   {
     src: "assets/images/foto-05.jpeg",
-    title: "Nosso lugar",
+    title: "Seus olios, meus olios",
     place: "Zerbini",
     description:
       "Queria achar palavras melhores para descrever o tanto que eu gosto de ti, do seu olhar e todos os seus detalhes."
   },
   {
     src: "assets/images/foto-06.jpeg",
-    title: "Depois da chuva",
+    title: "Depois dos olios, mais olios",
     place: "Sua minha casa",
     description:
       "por favor, nunca perca esse brilho que tem nos olhos."
@@ -51,35 +51,35 @@ const photos = [
   },
   {
     src: "assets/images/foto-08.jpeg",
-    title: "Oito",
+    title: "Venus",
     place: "Sua nossa casa",
     description:
       "Você deveria me deixar tirar mais fotos suas, você sempre fica perfeita em todo momento congelado, mais linda ainda de se ver em movimento."
   },
   {
     src: "assets/images/foto-09.jpeg",
-    title: "Um pouco de nós",
+    title: "Uma flo pa ota flo",
     place: "Calçada do senai",
     description:
       "Eu ainda te entrego todas as flores desse mundo, você vai ver."
   },
   {
     src: "assets/images/foto-10.jpeg",
-    title: "Luz de fim de tarde",
+    title: "Minha luz de fim de tarde",
     place: "Minha casa",
     description:
       "Gosto dessa foto, voce tava parecendo um gatinho."
   },
   {
     src: "assets/images/foto-11.jpeg",
-    title: "Coisas pequenas",
+    title: "cansaço e aconchego",
     place: "Cotidiano",
     description:
       "Não acho que precise explicar, você faz meus olhos ainda terem esperança em ver o que tem a seguir, me faz correr na direção do que pode ser melhor para mim e para nós."
   },
   {
     src: "assets/images/foto-12.jpeg",
-    title: "Doze",
+    title: "Pitico",
     place: "mal encarado",
     description:
       "Valeu a pena gastar minha sorte naquela maquina, que ele sempre te faça companhia."
@@ -100,7 +100,7 @@ const photos = [
   },
   {
     src: "assets/images/foto-15.jpeg",
-    title: "Ainda nós",
+    title: "Não temos uma última.",
     place: "Onde estivermos",
     description:
       "Eu ainda vou te amar em cada beijo, cada segundo ou realidade. Você é a minha paz, amor. Eu te amo."
