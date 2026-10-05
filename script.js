@@ -89,7 +89,7 @@ const photos = [
     title: "Mais um capítulo",
     place: "Continuamos",
     description:
-      "Aqui pode entrar uma fotografia que mostre mudança: um corte de cabelo, uma viagem, uma conquista ou só vocês dois um pouco diferentes."
+      "eu amo você."
   },
   {
     src: "assets/images/foto-01.jpeg",
